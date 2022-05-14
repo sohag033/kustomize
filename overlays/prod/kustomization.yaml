@@ -3,7 +3,8 @@ kind: Kustomization
 bases:
 - ../../vault
 
-namespace= sohag-prod
+namespace: sohag-prod
 
-patchesStrategicMerge::
+patchesStrategicMerge:
 - svc.yaml
+ 
