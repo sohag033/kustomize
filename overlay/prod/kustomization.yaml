@@ -3,4 +3,4 @@ kind: Kustomization
 
 namespace= sohagprod
 resources:s
-- svc.yml
+- svc.yaml
