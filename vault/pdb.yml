@@ -1,0 +1,15 @@
+# Source: vaultwarden/templates/pdb.yaml
+apiVersion: policy/v1beta1
+kind: PodDisruptionBudget
+metadata:
+  name: vaultwarden
+  namespace: sohag
+  labels:
+    app.kubernetes.io/name: vaultwarden
+    app.kubernetes.io/version: "latest"
+spec:
+  minAvailable: 50%
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: vaultwarden
+      app.kubernetes.io/version: "latest"

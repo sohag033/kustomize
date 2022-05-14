@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vaultwarden
+  namespace: sohag
+  labels:
+    app.kubernetes.io/name: vaultwarden
+    app.kubernetes.io/version: "latest"
+data:
+  DATABASE_MAX_CONNS: "50"
+  DISABLE_ADMIN_TOKEN: "false"
+  #DOMAIN: https://vaultwarden.dh.health
+  LOG_FILE: /var/log/vaultwarden.log
+  ORG_CREATION_USERS: sohag033@gmail.com
+  ROCKET_CLI_COLORS: "false"
+  SIGNUPS_ALLOWED: "false"
+  #SIGNUPS_DOMAINS_WHITELIST: dh.health
+  SIGNUPS_VERIFY: "true"
+  SMTP_EXPLICIT_TLS: "true"
+  SMTP_FROM: sohag033@gmail.com
+  SMTP_FROM_NAME: Vaultwarden
+  SMTP_HOST: email-smtp.ap-southeast-1.amazonaws.com
+  SMTP_PORT: "465"
+  SMTP_SSL: "false"
+  SMTP_USERNAME: AKIAQ7SPCQJC65XR6MOW

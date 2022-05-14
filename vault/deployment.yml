@@ -1,0 +1,37 @@
+# Source: vaultwarden/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vaultwarden
+  namespace: sohag
+  labels:
+    app.kubernetes.io/name: vaultwarden
+    app.kubernetes.io/version: "latest"
+    app.kubernetes.io/managed-by: kustomize
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: vaultwarden
+  template:
+    metadata:
+      annotations:
+        timestamp: "2022-05-13T19:29:01Z+06"
+      labels:
+        app.kubernetes.io/name: vaultwarden
+    spec:
+      #serviceAccountName: default
+      containers:
+        - name: vaultwarden
+          image: "vaultwarden/server:latest"
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+          envFrom:
+            - configMapRef:
+                name: vaultwarden
+            - secretRef:
+                name: vaultwarden
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
