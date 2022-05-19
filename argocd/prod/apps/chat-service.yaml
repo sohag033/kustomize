@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: "chat-service"
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  project: chat
+  source:
+    path: overlays/chat-service/prod
+    plugin:
+      name: argocd-vault-plugin-kustomize
+    repoURL: git@github.com:Coffee-Meets-Bagel/deployments.git
+    targetRevision: HEAD

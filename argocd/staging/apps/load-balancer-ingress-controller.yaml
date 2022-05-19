@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: load-balancer-ingress-controller
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  project: sre
+  source:
+    path: overlays/load-balancer-ingress-controller/staging
+    plugin:
+      name: argocd-vault-plugin-kustomize
+    repoURL: git@github.com:Coffee-Meets-Bagel/deployments.git
+    targetRevision: HEAD

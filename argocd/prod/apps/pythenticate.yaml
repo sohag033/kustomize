@@ -1,0 +1,16 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: pythenticate
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  project: backend
+  source:
+    path: overlays/pythenticate/prod
+    repoURL: git@github.com:Coffee-Meets-Bagel/deployments.git
+    targetRevision: HEAD

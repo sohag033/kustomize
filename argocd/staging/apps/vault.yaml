@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: vaultwarden
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  project: secret
+  source:
+    path: overlays/staging
+    plugin:
+      name: argocd-vault-plugin-kustomize
+    repoURL: https://github.com/sohag033/kustomize.git
+    targetRevision: HEAD

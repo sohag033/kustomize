@@ -1,0 +1,20 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  annotations:
+    notifications.argoproj.io/subscribe.on-health-degraded.slack: sre-alerts
+    notifications.argoproj.io/subscribe.on-sync-running.slack: sre-alerts
+    notifications.argoproj.io/subscribe.on-sync-failed.slack: sre-alerts
+    notifications.argoproj.io/subscribe.on-sync-succeeded.slack: sre-alerts
+  name: sre
+  namespace: argocd
+spec:
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  destinations:
+  - namespace: '*'
+    server: '*'
+  sourceRepos:
+  - '*'
