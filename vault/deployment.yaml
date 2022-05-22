@@ -23,7 +23,7 @@ spec:
       #serviceAccountName: default
       containers:
         - name: vaultwarden
-          image: "vaultwarden/server:latest"
+          image: "vaultwarden"
           imagePullPolicy: IfNotPresent
           volumeMounts:
           envFrom:
