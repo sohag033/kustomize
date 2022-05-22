@@ -14,5 +14,5 @@ spec:
     path: overlays/staging
     plugin:
       name: argocd-vault-plugin-kustomize
-    repoURL: https://github.com/sohag033/kustomize.git
+    repoURL: https://github.com/sohag033/dh-vaultwarden.git
     targetRevision: HEAD
