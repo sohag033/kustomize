@@ -7,4 +7,8 @@ namespace: sohag-prod
 
 patchesStrategicMerge:
 - svc.yaml
- 
+
+images:
+- name: vaulwarden
+  newName: $DOCKER_USERNAME/vaultwarden:$GITHUB_SHA
+  #newTag:  
