@@ -12,7 +12,7 @@ spec:
   project: secret
   source:
     path: overlays/staging
-    plugin:
-      name: argocd-vault-plugin-kustomize
+    #plugin:
+    #name: argocd-vault-plugin-kustomize
     repoURL: https://github.com/sohag033/kustomize.git
     targetRevision: HEAD

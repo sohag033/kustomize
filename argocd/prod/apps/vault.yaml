@@ -13,10 +13,10 @@ spec:
   project: default
   source:
     path: overlays/prod
-    plugin:
-      name: argocd-vault-plugin-kustomize
-      repoURL: https://github.com/sohag033/kustomize.git
-      targetRevision: HEAD
+    # plugin:
+    # name: argocd-vault-plugin-kustomize
+    repoURL: https://github.com/sohag033/kustomize.git
+    targetRevision: HEAD
   
   syncPolicy:
        syncOptions:
