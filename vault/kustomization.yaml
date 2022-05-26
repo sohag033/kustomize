@@ -9,4 +9,4 @@ resources:
 images:
   - name: vaultwarden
     vewName: sohag/vaultwarden
-    newTag: main - \${GITHUB_SHA::7}
+    newTag: main - 8be0f7aad2690c8edb1728dd5c0042fb6190a707
