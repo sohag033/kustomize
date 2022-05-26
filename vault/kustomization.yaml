@@ -11,5 +11,5 @@ resources:
 
 images: 
 - name: vaultwarden   
-  vewName: sohag/vaultwarden
+  vewName: sohag\/vaultwarden
   newTag: some_tag
