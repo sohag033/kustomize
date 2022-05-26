@@ -8,8 +8,7 @@ resources:
   - pdb.yaml
   - secret.yaml
   
-
 images: 
-- name: vaultwarden   
-  vewName: sohag\/vaultwarden
-  newTag: some_tag
+- name: vaultwarden   
+  vewName: sohag\/vaultwarden
+  newTag: some_tag
