@@ -11,4 +11,7 @@ resources:
   
 images: \n\v- name: vaultwarden \n\vvewName: sohag/vaultwarden \n\vnewTag: sohag/vaultwarden:main-2f6dfcd
 n images: \n\v- name: vaultwarden \n\vvewName: sohag/vaultwarden \n\vnewTag: sohag/vaultwarden:main-c874e95
-images: \n\v- name: vaultwarden \n\vvewName: sohag/vaultwarden \n\vnewTag: sohag/vaultwarden:main-920374f
+images: \n\v- name: vaultwarden \n\vvewName: sohag/vaultwarden \n\vnewTag: sohag/vaultwarden:main-920374fimages: 
+- name: vaultwarden 
+vewName: sohag/vaultwarden 
+newTag: sohag/vaultwarden:main-ce48ada
