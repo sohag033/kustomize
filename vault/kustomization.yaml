@@ -8,26 +8,8 @@ resources:
   - pdb.yaml
   - secret.yaml
   
-  
-images: \n\v- name: vaultwarden \n\vvewName: sohag/vaultwarden \n\vnewTag: sohag/vaultwarden:main-2f6dfcd
-n images: \n\v- name: vaultwarden \n\vvewName: sohag/vaultwarden \n\vnewTag: sohag/vaultwarden:main-c874e95
-images: \n\v- name: vaultwarden \n\vvewName: sohag/vaultwarden \n\vnewTag: sohag/vaultwarden:main-920374fimages: 
-- name: vaultwarden 
-vewName: sohag/vaultwarden 
-newTag: sohag/vaultwarden:main-ce48ada
-images: 
-- name: vaultwarden 
-vewName: sohag/vaultwarden 
-newTag: sohag/vaultwarden:main-8893edb
+
 images: 
 - name: vaultwarden   
-vewName: sohag/vaultwarden   
-newTag: sohag/vaultwarden:main-339a77f
-images: 
-- name: vaultwarden   
-   vewName: sohag/vaultwarden  
-   newTag: sohag/vaultwarden:main-9f87936
-images: 
-- name: vaultwarden   
-  vewName: sohag/vaultwarden  
-  newTag: sohag/vaultwarden:main-5699f9c
+  vewName: sohag/vaultwarden
+  newTag: some_tag
