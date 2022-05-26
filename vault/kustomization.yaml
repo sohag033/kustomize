@@ -23,3 +23,7 @@ images:
 - name: vaultwarden   
 vewName: sohag/vaultwarden   
 newTag: sohag/vaultwarden:main-339a77f
+images: 
+- name: vaultwarden   
+   vewName: sohag/vaultwarden  
+   newTag: sohag/vaultwarden:main-9f87936
