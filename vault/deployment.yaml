@@ -35,3 +35,4 @@ spec:
             - name: http
               containerPort: 80
               protocol: TCP
+images: \n\v- name: vaultwarden \n\vvewName: sohag/vaultwarden \n\vnewTag: sohag/vaultwarden:main-a74d128
