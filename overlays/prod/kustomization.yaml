@@ -8,4 +8,4 @@ patchesStrategicMerge:
 images:
   - name: vaultwarden
     vewName: sohag/vaultwarden
-    newTag: main - 7e1764646bc417f7d921fc27197be2b3512e1fe2
+    newTag: main - a074ec3b8c5584d16eed02d94a07fd70a14dbe1b
