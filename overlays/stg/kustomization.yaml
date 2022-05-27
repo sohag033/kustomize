@@ -4,4 +4,4 @@ bases:
   - ../../vault
 namespace: sohag-stg
 images:
-  - newTag: main - 453b3306fbc20ef10891fd21de5893003a006953
+  - newTag: main - bdf891c3c3918129df6e18ed74d4bce037b688ad
