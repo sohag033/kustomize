@@ -6,5 +6,5 @@ namespace: sohag-prod
 patchesStrategicMerge:
   - svc.yaml
 images:
-- name: vaultwarden
-  newName: sohag/vaultwarden:main - 9dbd3516b17e325cdcec26ce46a8bf0057554c23
+  - name: vaultwarden
+    newName: sohag/vaultwarden:main - 48bc15059c88f9f2b8ff412423fdef23f3eb17bd
