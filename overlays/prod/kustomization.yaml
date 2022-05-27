@@ -2,13 +2,10 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 bases:
   - ../../vault
-
 namespace: sohag-prod
-
 patchesStrategicMerge:
   - svc.yaml
-
 images:
   - name: vaultwarden
     vewName: sohag/vaultwarden
-    newTag: some_name
+    newTag: main - 7e1764646bc417f7d921fc27197be2b3512e1fe2
