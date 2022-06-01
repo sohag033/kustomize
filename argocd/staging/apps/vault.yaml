@@ -10,7 +10,7 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: sohag-stg
-  project: default
+  project: secret
   source:
     path: overlays/stg
     #plugin:
