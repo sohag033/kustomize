@@ -12,7 +12,7 @@ spec:
     namespace: sohag-stg
   project: default
   source:
-    path: overlays/staging
+    path: overlays/stg
     #plugin:
     #name: argocd-vault-plugin-kustomize
     repoURL: https://github.com/sohag033/kustomize.git
