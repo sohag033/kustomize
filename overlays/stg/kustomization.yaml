@@ -4,5 +4,5 @@ bases:
   - ../../vault
 namespace: sohag-stg
 images:
-- name: vaultwarden
-  newName: staging - e5a7224988074440288d1ff915538d64ec76618f
+  - name: vaultwarden
+    newName: sohag/vaultwarden:staging-46f96491fed4c10129976e994eb1b309c63397fd
