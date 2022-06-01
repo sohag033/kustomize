@@ -9,6 +9,7 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
+    namespace: sohag-stg
   project: default
   source:
     path: overlays/staging
@@ -16,3 +17,11 @@ spec:
     #name: argocd-vault-plugin-kustomize
     repoURL: https://github.com/sohag033/kustomize.git
     targetRevision: HEAD
+
+  syncPolicy:
+       syncOptions:
+       - CreateNamespace=false
+
+       automated:
+         selfHeal: true
+         prune: true
