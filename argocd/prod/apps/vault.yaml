@@ -10,7 +10,7 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: sohag-prod
-  project: secrets
+  project: secret
   source:
     path: overlays/prod
     # plugin:
