@@ -7,4 +7,4 @@ patchesStrategicMerge:
   - svc.yaml
 images:
   - name: vaultwarden
-    newName: $IMAGE_NAME:main-baf3895218d3d3698f87989c1a3cc5dc6db35650
+    newName: sohag/vaultwarden:main-0a963b1f525a6b779074253d2288ae30ca443410
