@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
-  project: default
+  project: secrets
   source:
     path: overlays/argocd/prod/apps
     repoURL: https://github.com/sohag033/kustomize.git
